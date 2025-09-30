@@ -17,6 +17,9 @@ import Departments from './components/pages/users&roles/Departments';
 import Roles from './components/pages/users&roles/Roles';
 import SystemActivity from './components/pages/audit/SystemActivity';
 import ManageAssets from './components/pages/assets/ManageAssets';
+import PageNotFound from './components/pages/PageNotFound';
+import MaintenanceRequests from './components/pages/maintenance/MaintenanceRequests';
+import RequestHandling from './components/pages/maintenance/RequestHandling';
 // import 'bootstrap/dist/css/bootstrap.min.css';
 
 
@@ -34,6 +37,8 @@ const router = createBrowserRouter([
       {path:'/my-requisitions', element: <MyRequisitions />},
       {path:'/approvals', element: <Approvals />},
       {path:'/maintenance-logs', element: <MaintenanceLogs />},
+      {path:'/maintenance-requests', element: <MaintenanceRequests />},
+      {path:'/request-handling', element: <RequestHandling />},
       {path:'/maintenance-reports', element: <MaintenanceReports />},
       {path:'/user-management', element: <UserManagement />},
       {path:'/departments', element: <Departments />},
@@ -41,7 +46,7 @@ const router = createBrowserRouter([
       {path:'/system-activity', element: <SystemActivity />},
     ]
   },
-  {path: '*', element: <h1>404 page not found</h1>}
+  {path: '*', element: <PageNotFound />}
 
 ]);
 

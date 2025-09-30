@@ -10,7 +10,7 @@ function Navbar() {
                     </div>
                     <div>
                         <a className="navbar-brand brand-logo" href="index.html">
-                            {/* <img src="images/logo.svg" alt="logo" /> */}
+                            <img src="images/logo.png" alt="logo" style={{height:"50px",width:"700px"}}/>
                         </a>
                         <a className="navbar-brand brand-logo-mini" href="index.html">
                             {/* <img src="images/logo-mini.svg" alt="logo" /> */}

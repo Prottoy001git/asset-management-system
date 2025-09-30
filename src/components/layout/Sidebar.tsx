@@ -12,6 +12,20 @@ function Sidebar() {
                         </Link>
                     </li>
                     <li className="nav-item">
+                        <Link className="nav-link" data-bs-toggle="collapse" to="#icons" aria-expanded="false" aria-controls="icons">
+                            <i className="menu-icon mdi mdi-account-key"></i>
+                            <span className="menu-title">Users & Roles</span>
+                            <i className="menu-arrow"></i>
+                        </Link>
+                        <div className="collapse" id="icons">
+                            <ul className="nav flex-column sub-menu">
+                                <li className="nav-item"> <Link className="nav-link" to="/user-management">User Management</Link></li>
+                                <li className="nav-item"> <Link className="nav-link" to="/departments">Departments</Link></li>
+                                <li className="nav-item"> <Link className="nav-link" to="/roles">Roles & Permissions</Link></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li className="nav-item">
                         <Link className="nav-link" data-bs-toggle="collapse" to="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
                             <i className="menu-icon mdi mdi-coin"></i>
                             <span className="menu-title">Assets</span>
@@ -62,21 +76,21 @@ function Sidebar() {
                             <ul className="nav flex-column sub-menu">
                                 {/* <li className="nav-item"> <Link className="nav-link" to="/maintenance-logs">Maintenance Logs</Link></li> */}
                                 {/* <li className="nav-item"> <Link className="nav-link" to="pages/tables/basic-table.html">Upcoming Schedules</Link></li> */}
+                                <li className="nav-item"> <Link className="nav-link" to="/maintenance-requests">Maintenance Requests</Link></li>
+                                <li className="nav-item"> <Link className="nav-link" to="/request-handling">Manage Requests</Link></li>
                                 <li className="nav-item"> <Link className="nav-link" to="/maintenance-reports">Maintenance Reports</Link></li>
                             </ul>
                         </div>
                     </li>
                     <li className="nav-item">
-                        <Link className="nav-link" data-bs-toggle="collapse" to="#icons" aria-expanded="false" aria-controls="icons">
-                            <i className="menu-icon mdi mdi-account-key"></i>
-                            <span className="menu-title">Users & Roles</span>
+                        <Link className="nav-link" data-bs-toggle="collapse" to="#auth" aria-expanded="false" aria-controls="auth">
+                            <i className="menu-icon mdi mdi-content-save-all"></i>
+                            <span className="menu-title">Depriciation</span>
                             <i className="menu-arrow"></i>
                         </Link>
-                        <div className="collapse" id="icons">
+                        <div className="collapse" id="auth">
                             <ul className="nav flex-column sub-menu">
-                                <li className="nav-item"> <Link className="nav-link" to="/user-management">User Management</Link></li>
-                                <li className="nav-item"> <Link className="nav-link" to="/departments">Departments</Link></li>
-                                <li className="nav-item"> <Link className="nav-link" to="/roles">Roles & Permissions</Link></li>
+                                <li className="nav-item"> <Link className="nav-link" to="/system-activity"> System Activity </Link></li>
                             </ul>
                         </div>
                     </li>

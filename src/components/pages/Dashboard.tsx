@@ -25,12 +25,12 @@ const Dashboard = () => {
       {/* Summary Cards */}
       <div className="row mb-4">
         {[
-          { label: "Total Assets", value: summary.totalAssets, color: "primary" },
+          { label: "Total Assets", value: summary.totalAssets, color: "info" },
           { label: "Assigned Assets", value: summary.assignedAssets, color: "success" },
           { label: "Total Users", value: summary.totalUsers, color: "info" },
-          { label: "Departments", value: summary.totalDepartments, color: "warning", textDark: true },
+          { label: "Departments", value: summary.totalDepartments, color: "warning" },
           { label: "Pending Requisitions", value: summary.pendingRequisitions, color: "danger" },
-          { label: "Completed Maintenance", value: summary.completedMaintenance, color: "secondary" },
+          { label: "Completed Maintenance", value: summary.completedMaintenance, color: "success" },
         ].map((card, idx) => (
           <div className="col-md-2 mb-3" key={idx}>
             <div className={`card text-center shadow-sm text-${card.textDark ? "dark" : "white"} bg-${card.color}`}>

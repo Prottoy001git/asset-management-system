@@ -48,9 +48,9 @@ const MaintenanceReports = () => {
       {/* Summary Cards */}
       <div className="row mb-4">
         {[
-          { label: "Total Activities", value: summary.total, color: "primary" },
+          { label: "Total Activities", value: summary.total, color: "info" },
           { label: "Completed", value: summary.completed, color: "success" },
-          { label: "Scheduled", value: summary.scheduled, color: "warning", textDark: true },
+          { label: "Scheduled", value: summary.scheduled, color: "warning"},
           { label: "Overdue", value: summary.overdue, color: "danger" },
           { label: "Assets Under Maintenance", value: summary.assetsUnderMaintenance, color: "info" },
         ].map((card, idx) => (
